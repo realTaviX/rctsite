@@ -824,6 +824,101 @@
       .top-actions .header-cta{display:none}
     }
 
+
+    .demo-link{
+      margin-top:28px;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      width:max-content;
+      padding:13px 18px;
+      border-radius:999px;
+      background:#fff;
+      color:#000;
+      font-size:13px;
+      font-weight:800;
+      transition:.25s ease;
+    }
+    .demo-link:hover{
+      transform:translateY(-2px);
+      box-shadow:0 10px 30px rgba(255,255,255,.08);
+    }
+    .demo-link .demo-dot{
+      width:7px;
+      height:7px;
+      border-radius:50%;
+      background:#000;
+      box-shadow:0 0 0 4px rgba(0,0,0,.08);
+    }
+    .inkshot-card{
+      margin-top:14px;
+      min-height:300px;
+      border:1px solid var(--line);
+      border-radius:24px;
+      display:grid;
+      grid-template-columns:1fr auto;
+      gap:28px;
+      padding:34px;
+      background:linear-gradient(180deg,rgba(255,255,255,.018),rgba(255,255,255,.008));
+    }
+    .inkshot-info{
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      gap:28px;
+    }
+    .inkshot-kicker{
+      font-size:10px;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      color:#787873;
+    }
+    .inkshot-title{
+      font-size:clamp(42px,5.3vw,78px);
+      font-weight:800;
+      letter-spacing:-.055em;
+      margin-top:10px;
+    }
+    .inkshot-copy{
+      color:#969692;
+      line-height:1.65;
+      max-width:700px;
+      margin-top:16px;
+    }
+    .inkshot-side{
+      min-width:190px;
+      border-left:1px solid var(--line-soft);
+      padding-left:28px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      align-items:flex-end;
+    }
+    .inkshot-badge{
+      font-size:10px;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      color:#b9b9b5;
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:8px 10px;
+    }
+    .inkshot-arrow{
+      font-size:48px;
+      color:#6f6f6b;
+    }
+    @media(max-width:760px){
+      .inkshot-card{grid-template-columns:1fr}
+      .inkshot-side{
+        min-width:0;
+        border-left:0;
+        border-top:1px solid var(--line-soft);
+        padding-left:0;
+        padding-top:22px;
+        align-items:flex-start;
+      }
+    }
+
   </style>
 </head>
 
@@ -957,6 +1052,11 @@
             Stack, adapt and break the rules in a roguelike puzzle experience
             built around powerful abilities, unpredictable runs and endless combinations.
           </p>
+
+          <a class="demo-link" href="https://inkshott-c8uw-kh4lwspt5-gustadesanta-3143.vercel.app/" target="_blank" rel="noreferrer">
+            <span class="demo-dot"></span>
+            Jogar demo de Inkshot ↗
+          </a>
         </div>
 
         <div class="project-visual">
@@ -968,6 +1068,29 @@
           <i class="block b6"></i>
           <i class="block b7"></i>
           <i class="block b8"></i>
+        </div>
+      </article>
+
+      <article class="inkshot-card reveal">
+        <div class="inkshot-info">
+          <div>
+            <div class="inkshot-kicker">PROJECT / PLAYABLE DEMO</div>
+            <h3 class="inkshot-title rgb-text">INKSHOT</h3>
+            <p class="inkshot-copy">
+              Um protótipo jogável da RCT disponível online. Abra a demo no navegador
+              e teste diretamente sem precisar instalar nada.
+            </p>
+          </div>
+
+          <a class="demo-link" href="https://inkshott-c8uw-kh4lwspt5-gustadesanta-3143.vercel.app/" target="_blank" rel="noreferrer">
+            <span class="demo-dot"></span>
+            Abrir Inkshot
+          </a>
+        </div>
+
+        <div class="inkshot-side">
+          <span class="inkshot-badge">LIVE ON VERCEL</span>
+          <span class="inkshot-arrow">↗</span>
         </div>
       </article>
     </section>
