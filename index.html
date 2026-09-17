@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="RCT Roxy Team — Games, Websites & Digital Projects." />
   <title>RCT Roxy Team</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSIjMDUwNTA1Ii8+CjxyZWN0IHg9IjciIHk9IjciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgcng9IjEwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIvPgo8cGF0aCBkPSJNMTcgNDVWMTloMTFjNyAwIDExIDQgMTEgMTAgMCA1LTMgOC04IDlsOSA3IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iNCIvPgo8cGF0aCBkPSJNNDMgMTloN3YyNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjQiLz4KPC9zdmc+">
+  <meta name="theme-color" content="#050505" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -919,6 +921,37 @@
       }
     }
 
+
+    .coming-soon-badge{
+      margin-top:28px;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      width:max-content;
+      padding:11px 15px;
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:999px;
+      color:#d6d6d2;
+      background:rgba(255,255,255,.025);
+      font-size:10px;
+      font-weight:800;
+      letter-spacing:.16em;
+    }
+
+    .coming-dot{
+      width:7px;
+      height:7px;
+      border-radius:50%;
+      background:#fff;
+      box-shadow:0 0 14px rgba(255,255,255,.35);
+      animation:comingPulse 1.8s ease-in-out infinite;
+    }
+
+    @keyframes comingPulse{
+      0%,100%{opacity:.45;transform:scale(.9)}
+      50%{opacity:1;transform:scale(1.1)}
+    }
+
   </style>
 </head>
 
@@ -1053,10 +1086,10 @@
             built around powerful abilities, unpredictable runs and endless combinations.
           </p>
 
-          <a class="demo-link" href="https://inkshott-c8uw-kh4lwspt5-gustadesanta-3143.vercel.app/" target="_blank" rel="noreferrer">
-            <span class="demo-dot"></span>
-            Jogar demo de Inkshot ↗
-          </a>
+          <div class="coming-soon-badge">
+            <span class="coming-dot"></span>
+            COMING SOON
+          </div>
         </div>
 
         <div class="project-visual">
@@ -1082,7 +1115,7 @@
             </p>
           </div>
 
-          <a class="demo-link" href="https://inkshott-c8uw-kh4lwspt5-gustadesanta-3143.vercel.app/" target="_blank" rel="noreferrer">
+          <a class="demo-link" href="https://inkshott.onrender.com/" target="_blank" rel="noreferrer">
             <span class="demo-dot"></span>
             Abrir Inkshot
           </a>
