@@ -1,0 +1,12 @@
+# Ignorar um arquivo específico
+LICENSE
+CNAME
+# Ignorar uma pasta inteira
+node_modules/
+
+# Ignorar todos os arquivos com uma extensão específica
+*.log
+
+# Ignorar arquivos temporários do sistema
+.DS_Store
+Thumbs.db   
