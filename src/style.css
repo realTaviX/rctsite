@@ -202,7 +202,7 @@ nav a:hover{color:#fff}
 }
 
 .hero-title{
-    font-size:clamp(52px,7.4vw,118px);
+    font-size:clamp(52px,7.4vw,89px);
     font-weight:400;
     max-width:1000px;
 }
