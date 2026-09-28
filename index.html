@@ -4,441 +4,677 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="RCT Roxy Team — Games, Websites & Digital Projects." />
-    <title>RCT Roxy Team</title>
-    <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CjxyZWN0IHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgcng9IjE0IiBmaWxsPSIjMDUwNTA1Ii8+CjxyZWN0IHg9IjciIHk9IjciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgcng9IjEwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMyIvPgo8cGF0aCBkPSJNMTcgNDVWMTloMTFjNyAwIDExIDQgMTEgMTAgMCA1LTMgOC04IDlsOSA3IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iNCIvPgo8cGF0aCBkPSJNNDMgMTloN3YyNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjQiLz4KPC9zdmc+">
-    <meta name="theme-color" content="#050505" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="theme-color" content="#030303" />
+    <meta name="description"
+        content="Landing pages, websites e experiências digitais desenvolvidas pela Roxy Create Team." />
+    <meta property="og:title" content="Roxy Create Team | Landing Pages & Desenvolvimento Web" />
+    <meta property="og:description"
+        content="Landing pages, websites e experiências digitais desenvolvidas pela Roxy Create Team." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/icon-r.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Press+Start+2P&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="src/style.css">
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Roxy Create Team | Landing Pages & Desenvolvimento Web</title>
 </head>
 
 <body>
-    <div class="noise"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
 
-    <header>
-        <a href="#top" class="brand">
-            <span class="brand-mark">RCT</span>
-            <span class="brand-name">ROXY TEAM</span>
+    <header class="navbar" id="navbar">
+        <a class="brand" href="#inicio" aria-label="Roxy Create Team - Início">
+            <img src="assets/roxy-r.png" alt="Roxy Create Team" />
+            <span>ROXY <b>CREATE TEAM</b></span>
         </a>
-
-        <nav>
-            <a href="#about" data-i18n="nav_about">Sobre</a>
-            <a href="#projects" data-i18n="nav_projects">Projetos</a>
-            <a href="#links" data-i18n="nav_links">Links</a>
-            <a href="#contact" data-i18n="nav_contact">Contato</a>
+        <nav class="nav-links" aria-label="Navegação principal">
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#processo">Como funciona</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#planos">Planos</a>
+            <a href="#equipe">Equipe</a>
+            <a href="#faq">FAQ</a>
         </nav>
-
-        <div class="top-actions">
-            <a href="#links" class="header-links" data-i18n="nav_links">Links</a>
-            <a href="#contact" class="header-cta" data-i18n="nav_contact_desc">Fale com a RCT</a>
-        </div>
+        <a class="btn btn-primary nav-cta" href="#contato">Solicitar proposta</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu"
+            aria-expanded="false"><span></span><span></span></button>
     </header>
 
-    <main id="top">
-        <section class="hero">
+    <main>
+        <section class="hero section" id="inicio">
             <div class="hero-grid"></div>
-
-            <div class="corner-chain tl" aria-hidden="true">
-                <span></span><span></span><span></span><span></span><span></span><span></span>
-            </div>
-
-            <div class="corner-chain br" aria-hidden="true">
-                <span></span><span></span><span></span><span></span><span></span><span></span>
-            </div>
-
-            <div class="hero-inner">
-                <p class="eyebrow reveal">RCT ROXY TEAM / INDEPENDENT CREATIVE STUDIO</p>
-
-                <h1 class="hero-title pixel-title rgb-text reveal" data-i18n="hero_text1">
-                    CRIAMOS IDEIAS<br>
-                    <span class="white">DO ZERO.</span>
-                </h1>
-
-                <p class="hero-copy reveal" data-i18n="hero_text2">
-                    Games, websites e projetos digitais com foco em identidade,
-                    simplicidade e experiências marcantes.
-                </p>
-
-                <div class="actions reveal">
-                    <a class="btn btn-light" href="#projects" data-i18n="btn_projects">Ver projetos</a>
-                    <a class="btn btn-dark" href="#about" data-i18n="btn_about">Conhecer a RCT</a>
+            <div class="hero-content reveal">
+                <p class="eyebrow"><span class="status-dot"></span> ROXY CREATE TEAM / DIGITAL STUDIO</p>
+                <h1>LANDING PAGES<br>QUE TRANSFORMAM<br><span>VISITAS EM AÇÃO.</span></h1>
+                <p class="hero-copy">Criamos landing pages modernas, rápidas e pensadas para apresentar sua empresa,
+                    produto ou serviço de forma profissional e transformar atenção em oportunidades.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#contato">Criar minha landing page <span>↗</span></a>
+                    <a class="btn btn-ghost" href="#planos">Conhecer os planos</a>
                 </div>
-
-                <div class="tags reveal">
-                    <span>Games</span>
-                    <span>Web</span>
-                    <span>Design</span>
-                    <span>Digital Projects</span>
+                <div class="hero-tags" aria-label="Diferenciais">
+                    <span>Design personalizado</span><span>Responsivo</span><span>Alta performance</span><span>Suporte
+                        contínuo</span>
                 </div>
             </div>
 
-            <div class="hero-blocks" aria-hidden="true">
-                <i class="block b1"></i>
-                <i class="block b2"></i>
-                <i class="block b3"></i>
-                <i class="block b4"></i>
-                <i class="block b5"></i>
-                <i class="block b6"></i>
-                <i class="block b7"></i>
-                <i class="block b8"></i>
+            <div class="hero-art reveal" aria-hidden="true">
+                <img class="hero-r" src="assets/roxy-r.png" alt="" />
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+                <div class="code-chip chip-a">[ RCT-001 ]</div>
+                <div class="code-chip chip-b">SYSTEM ONLINE</div>
+                <div class="code-chip chip-c">WEB / DESIGN / DEV</div>
+            </div>
+
+            <div class="hero-meta">
+                <span>EST. 2026</span>
+                <span>SCROLL TO EXPLORE ↓</span>
             </div>
         </section>
 
-        <section class="section" id="about">
-            <div class="section-label reveal">01 / <span data-i18n="reveal1">SOBRE</span></div>
-
-            <div class="about-grid">
-                <h2 class="section-title rgb-text reveal" data-i18n="title_grid">
-                    PEQUENA EQUIPE.<br>GRANDES IDEIAS.
-                </h2>
-
-                <div class="about-copy reveal">
-                    <p data-i18n="about_text1">
-                        A <strong>RCT Roxy Team</strong> é uma equipe independente focada em
-                        criar jogos, sites e experiências digitais com personalidade própria.
-                    </p>
-
-                    <p data-i18n="about_text2">
-                        Nosso objetivo é transformar ideias simples em projetos polidos,
-                        memoráveis e prontos para chegar ao público.
-                    </p>
-                </div>
-            </div>
-
-            <div class="stats">
-                <div class="stat reveal">
-                    <span class="stat-number rgb-text">01</span>
-                    <span class="stat-label" data-i18n="stats1">Primeiro game em desenvolvimento</span>
-                </div>
-
-                <div class="stat reveal">
-                    <span class="stat-number rgb-text">03</span>
-                    <span class="stat-label" data-i18n="stats2">Áreas criativas principais</span>
-                </div>
-
-                <div class="stat reveal">
-                    <span class="stat-number rgb-text">∞</span>
-                    <span class="stat-label" data-i18n="stats3">Ideias para construir</span>
-                </div>
+        <section class="ticker-wrap" aria-label="Áreas de atuação">
+            <div class="ticker">
+                <span>DESIGN • DESENVOLVIMENTO • PERFORMANCE • CONVERSÃO • WEB • ROXY CREATE TEAM •</span>
+                <span>DESIGN • DESENVOLVIMENTO • PERFORMANCE • CONVERSÃO • WEB • ROXY CREATE TEAM •</span>
             </div>
         </section>
 
-        <section class="section" id="projects">
-            <div class="section-label reveal">02 / <span data-i18n="reveal2">PROJETOS</span></div>
+        <section class="section problem" id="servicos">
+            <div class="section-kicker reveal">01 / PRESENÇA DIGITAL</div>
+            <div class="split-heading reveal">
+                <h2>SEU NEGÓCIO PODE SER BOM.<br><span>SUA PRESENÇA DIGITAL TAMBÉM PRECISA SER.</span></h2>
+                <p>Um cliente pode conhecer sua empresa em poucos segundos. Uma página confusa, lenta ou sem identidade
+                    pode fazer uma oportunidade desaparecer antes mesmo do primeiro contato.</p>
+            </div>
 
-            <article class="project-card reveal">
-                <div class="project-number">PROJECT 001</div>
+            <div class="compare-grid reveal">
+                <article class="compare-card muted">
+                    <div class="card-label">SITE COMUM</div>
+                    <ul>
+                        <li>Visual genérico</li>
+                        <li>Excesso de informação</li>
+                        <li>Baixa identidade</li>
+                        <li>Experiência ruim no celular</li>
+                        <li>Chamadas pouco claras</li>
+                    </ul>
+                </article>
+                <article class="compare-card featured">
+                    <div class="card-label">ROXY EXPERIENCE</div>
+                    <ul>
+                        <li>Design personalizado</li>
+                        <li>Hierarquia de informações</li>
+                        <li>Foco na conversão</li>
+                        <li>Responsividade</li>
+                        <li>Identidade própria</li>
+                        <li>Performance</li>
+                    </ul>
+                </article>
+            </div>
 
-                <div class="project-content">
-                    <div class="project-meta">
-                        <span>GAME</span>
-                        <span>PUZZLE ROGUELIKE</span>
-                        <span>IN DEVELOPMENT</span>
+            <div class="section-kicker reveal services-kicker">02 / SERVIÇOS</div>
+            <div class="services-heading reveal">
+                <h2>NÃO É SÓ UMA PÁGINA.<br><span>É A EXPERIÊNCIA DA SUA MARCA.</span></h2>
+            </div>
+
+            <div class="service-grid reveal">
+                <article class="service-card">
+                    <div class="service-num">01</div>
+                    <h3>LANDING PAGE</h3>
+                    <p>Para campanhas, empresas, produtos, serviços, lançamentos e captação de clientes.</p>
+                    <ul>
+                        <li>Design personalizado</li>
+                        <li>Desenvolvimento responsivo</li>
+                        <li>Estrutura focada em conversão</li>
+                        <li>Botões e CTAs</li>
+                        <li>WhatsApp e formulários</li>
+                        <li>SEO básico</li>
+                        <li>Publicação</li>
+                    </ul>
+                    <a href="#contato">Solicitar proposta ↗</a>
+                </article>
+                <article class="service-card blue-edge">
+                    <div class="service-num">02</div>
+                    <h3>LANDING PAGE + MANUTENÇÃO</h3>
+                    <p>Para empresas que precisam manter sua página sempre atualizada e em evolução.</p>
+                    <ul>
+                        <li>Landing page completa</li>
+                        <li>Alteração de textos</li>
+                        <li>Atualização de imagens</li>
+                        <li>Novas seções</li>
+                        <li>Correções</li>
+                        <li>Ajustes de layout</li>
+                        <li>Suporte contínuo</li>
+                    </ul>
+                    <a href="#planos">Conhecer plano mensal ↗</a>
+                </article>
+                <article class="service-card">
+                    <div class="service-num">03</div>
+                    <h3>PROJETO PERSONALIZADO</h3>
+                    <p>Para quem precisa ir além de uma landing page.</p>
+                    <ul>
+                        <li>Websites</li>
+                        <li>Portfólios</li>
+                        <li>Sistemas web</li>
+                        <li>Dashboards</li>
+                        <li>Ferramentas internas</li>
+                        <li>Aplicações e integrações</li>
+                        <li>Protótipos</li>
+                    </ul>
+                    <a href="#contato">Falar sobre meu projeto ↗</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section plans" id="planos">
+            <div class="section-kicker reveal">03 / PLANOS E PREÇOS</div>
+            <div class="split-heading reveal">
+                <h2>ESCOLHA O PLANO.<br><span>MONTE DO SEU JEITO.</span></h2>
+                <p>Escolha uma base, defina o período de administração e adicione apenas o que fizer sentido para o seu
+                    projeto.</p>
+            </div>
+
+            <div class="pricing-grid reveal" id="pricingCards">
+                <article class="pricing-card" data-plan="essencial">
+                    <div class="pricing-label">01 / PRESENÇA</div>
+                    <h3>Essencial</h3>
+                    <p>Para apresentar seu serviço com clareza e começar a receber contatos.</p>
+                    <div class="pricing-price"><strong>R$ 59</strong><span>/mês</span></div>
+                    <small>+ R$ 297 de criação, uma única vez</small>
+                    <button class="btn btn-ghost full choose-plan" data-plan="essencial">Quero começar →</button>
+                    <ul>
+                        <li>Landing page de até 5 seções</li>
+                        <li>Layout para celular e computador</li>
+                        <li>Botão para seu canal de contato</li>
+                        <li>SEO básico e publicação inicial</li>
+                        <li>1 rodada de atualização por mês</li>
+                    </ul>
+                </article>
+
+                <article class="pricing-card featured-price" data-plan="profissional">
+                    <div class="price-ribbon">PARA QUEM QUER EVOLUIR</div>
+                    <div class="pricing-label">02 / CONTINUIDADE</div>
+                    <h3>Profissional</h3>
+                    <p>Para quem quer uma página mais completa, com espaço para evoluir.</p>
+                    <div class="pricing-price"><strong>R$ 99</strong><span>/mês</span></div>
+                    <small>+ R$ 497 de criação, uma única vez</small>
+                    <button class="btn btn-primary full choose-plan" data-plan="profissional">Quero evoluir →</button>
+                    <ul>
+                        <li>Landing page de até 8 seções</li>
+                        <li>Todos os itens do Essencial</li>
+                        <li>Organização dos textos da página</li>
+                        <li>2 rodadas de atualização por mês</li>
+                        <li>Revisão mensal de links e conteúdo</li>
+                    </ul>
+                </article>
+
+                <article class="pricing-card" data-plan="completo">
+                    <div class="pricing-label">03 / PARCERIA</div>
+                    <h3>Completo</h3>
+                    <p>Para uma apresentação ampliada, com mais conteúdo e atualizações frequentes.</p>
+                    <div class="pricing-price"><strong>R$ 149</strong><span>/mês</span></div>
+                    <small>+ R$ 797 de criação, uma única vez</small>
+                    <button class="btn btn-ghost full choose-plan" data-plan="completo">Montar meu projeto →</button>
+                    <ul>
+                        <li>Landing page de até 10 seções</li>
+                        <li>Todos os itens do Profissional</li>
+                        <li>Organização de galeria ou portfólio</li>
+                        <li>4 rodadas de atualização por mês</li>
+                        <li>Revisão mensal de prioridades</li>
+                    </ul>
+                </article>
+            </div>
+
+            <p class="pricing-note reveal">Escolha de 1 a 12 meses, sem renovação automática. O período de administração
+                começa na publicação. Domínio, hospedagem e ferramentas externas são acordados separadamente. Escopo,
+                prazos e condições são confirmados na proposta, antes da contratação.</p>
+
+            <div class="plan-builder reveal" id="planBuilder">
+                <div class="builder-form">
+                    <p class="builder-kicker">DO SEU JEITO</p>
+                    <h3>Monte seu plano.</h3>
+                    <p class="builder-sub">Um mês, dois ou mais. Você escolhe o ritmo.</p>
+
+                    <div class="builder-row">
+                        <label>Seu plano
+                            <select id="builderPlan">
+                                <option value="essencial">Essencial · R$ 59/mês</option>
+                                <option value="profissional">Profissional · R$ 99/mês</option>
+                                <option value="completo">Completo · R$ 149/mês</option>
+                            </select>
+                        </label>
+                        <label>Meses de administração
+                            <select id="builderMonths"></select>
+                        </label>
                     </div>
 
-                    <h3 class="project-title rgb-text">THE FALLS</h3>
+                    <label>Seções extras · R$ 79 por seção, uma única vez
+                        <select id="builderExtraSections"></select>
+                    </label>
 
-                    <p data-i18n="project1_desc">
-                        Stack, adapt and break the rules in a roguelike puzzle experience
-                        built around powerful abilities, unpredictable runs and endless combinations.
-                    </p>
-
-                    <div class="coming-soon-badge" data-i18n="project1_text">
-                        <span class="coming-dot"></span>
-                        COMING SOON
+                    <div class="builder-addons">
+                        <span>Complemente seu projeto</span>
+                        <label class="addon-option">
+                            <span><input type="checkbox" id="builderRevision" /> 1 rodada extra de ajustes/mês</span>
+                            <b>+ R$ 29/mês</b>
+                        </label>
                     </div>
                 </div>
 
-                <div class="project-visual">
-                    <i class="block b1"></i>
-                    <i class="block b2"></i>
-                    <i class="block b3"></i>
-                    <i class="block b4"></i>
-                    <i class="block b5"></i>
-                    <i class="block b6"></i>
-                    <i class="block b7"></i>
-                    <i class="block b8"></i>
-                </div>
-            </article>
-
-            <article class="inkshot-card reveal">
-                <div class="inkshot-info">
-                    <div>
-                        <div class="inkshot-kicker">PROJECT / PLAYABLE DEMO</div>
-                        <h3 class="inkshot-title rgb-text">INKSHOT</h3>
-                        <p class="inkshot-copy" data-i18n="project2_desc">
-                            Um protótipo jogável da RCT disponível online. Abra a demo no navegador
-                            e teste diretamente sem precisar instalar nada.
-                        </p>
+                <aside class="builder-summary">
+                    <p class="builder-kicker">SEU INVESTIMENTO, SEM MISTÉRIO</p>
+                    <div class="summary-list">
+                        <div><span>Criação do site</span><strong id="summaryCreation">R$ 297,00</strong></div>
+                        <div><span>Adicionais únicos</span><strong id="summaryAddons">R$ 0,00</strong></div>
+                        <div><span id="summaryAdminLabel">Administração · 1 mês</span><strong id="summaryAdmin">R$
+                                59,00</strong></div>
+                        <div><span>Mensalidade de administração</span><strong id="summaryMonthly">R$ 59,00</strong>
+                        </div>
                     </div>
-
-                    <a class="demo-link" href="https://inkshott.onrender.com/" target="_blank" rel="noreferrer"
-                        data-i18n="project2_text">
-                        <span class="demo-dot"></span>
-                        Abrir Inkshot
-                    </a>
-                </div>
-
-                <div class="inkshot-side">
-                    <span class="inkshot-badge">LIVE ON VERCEL</span>
-                    <span class="inkshot-arrow">↗</span>
-                </div>
-            </article>
+                    <div class="summary-total"><span>Total do período</span><strong id="summaryTotal">R$ 356,00</strong>
+                    </div>
+                    <button class="btn btn-primary full" id="builderContactButton">Quero este plano →</button>
+                    <p class="summary-disclaimer">Criação + adicionais únicos + mensalidade × meses. Não é uma cobrança.
+                        Domínio, hospedagem e serviços externos à parte. Forma de pagamento definida na proposta.</p>
+                </aside>
+            </div>
         </section>
 
-
-        <section class="socials" id="links">
-            <div class="socials-head reveal">
-                <div>
-                    <div class="section-label" style="margin-bottom:16px;">03 / LINKS</div>
-                    <h2 class="section-title rgb-text" style="font-size:clamp(38px,5vw,72px);" data-i18n="socials_text">
-                        Encontre a RCT.</h2>
-                </div>
-                <p class="socials-copy" data-i18n="socials_desc">
-                    Primeiro, os canais oficiais da RCT. Abaixo, você também encontra os criadores do projeto.
-                </p>
+        <section class="section monthly-reason">
+            <div class="section-kicker reveal">04 / CONTINUIDADE</div>
+            <div class="split-heading reveal">
+                <h2>SEU SITE NÃO PRECISA<br><span>FICAR PARADO NO TEMPO.</span></h2>
+                <p>Empresas mudam. Ofertas mudam. Produtos mudam. Campanhas mudam. Sua página também deveria mudar.</p>
             </div>
-
-            <div class="links-group">
-                <div class="links-group-title reveal">RCT / <span data-i18n="links_title1">Canais oficiais</span></div>
-
-                <div class="social-links">
-                    <a class="social-btn reveal" href="https://www.youtube.com/@roxycooperativeteam" target="_blank"
-                        rel="noreferrer">
-                        <div class="social-main">
-                            <div class="social-icon fill" aria-hidden="true">
-                                <svg viewBox="0 0 24 24">
-                                    <path
-                                        d="M21 12c0-2.1-.2-4.2-.5-5.2-.2-.8-.8-1.4-1.6-1.6C17.6 4.8 14.9 4.7 12 4.7s-5.6.1-6.9.5c-.8.2-1.4.8-1.6 1.6C3.2 7.8 3 9.9 3 12s.2 4.2.5 5.2c.2.8.8 1.4 1.6 1.6 1.3.4 4 .5 6.9.5s5.6-.1 6.9-.5c.8-.2 1.4-.8 1.6-1.6.3-1 .5-3.1.5-5.2Z">
-                                    </path>
-                                    <path d="m10 9 5 3-5 3V9Z" fill="#000"></path>
-                                </svg>
-                            </div>
-                            <div class="social-text">
-                                <strong>YouTube</strong>
-                                <span>@roxycooperativeteam</span>
-                            </div>
-                        </div>
-                        <span class="social-arrow">↗</span>
-                    </a>
-
-                    <a class="social-btn reveal" href="https://x.com/roxyteamrct" target="_blank" rel="noreferrer">
-                        <div class="social-main">
-                            <div class="social-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M5 4l14 16"></path>
-                                    <path d="M19 4 5 20"></path>
-                                </svg>
-                            </div>
-                            <div class="social-text">
-                                <strong>Roxy Cooperative Team</strong>
-                                <span>@roxyteamrct</span>
-                            </div>
-                        </div>
-                        <span class="social-arrow">↗</span>
-                    </a>
-
-                    <a class="social-btn reveal" href="https://instagram.com/roxycooperativeteam" target="_blank"
-                        rel="noreferrer">
-                        <div class="social-main">
-                            <div class="social-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24">
-                                    <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-                                    <circle cx="12" cy="12" r="4"></circle>
-                                    <circle cx="17.5" cy="6.5" r="1"></circle>
-                                </svg>
-                            </div>
-                            <div class="social-text">
-                                <strong>Instagram</strong>
-                                <span>@roxycooperativeteam</span>
-                            </div>
-                        </div>
-                        <span class="social-arrow">↗</span>
-                    </a>
-
-                    <a class="social-btn reveal" href="https://discord.gg/YgZexsUyWv" target="_blank" rel="noreferrer">
-                        <div class="social-main">
-                            <div class="social-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M8 8.5c2.7-1.1 5.3-1.1 8 0"></path>
-                                    <path d="M7 7c-2 2-2.5 5.4-2 8.7 1.5 1.2 3 1.9 4.5 2.3l1.1-1.5"></path>
-                                    <path d="M17 7c2 2 2.5 5.4 2 8.7-1.5 1.2-3 1.9-4.5 2.3l-1.1-1.5"></path>
-                                    <circle cx="9.5" cy="12.5" r=".8" fill="currentColor" stroke="none"></circle>
-                                    <circle cx="14.5" cy="12.5" r=".8" fill="currentColor" stroke="none"></circle>
-                                </svg>
-                            </div>
-                            <div class="social-text">
-                                <strong>Discord — RCT</strong>
-                                <span>discord.gg/YgZexsUyWv</span>
-                            </div>
-                        </div>
-                        <span class="social-arrow">↗</span>
-                    </a>
+            <div class="mini-grid reveal">
+                <div><b>01</b>
+                    <h3>ATUALIZAÇÕES</h3>
+                    <p>Conteúdo, informações e campanhas sempre atualizados.</p>
                 </div>
-            </div>
-
-            <div class="links-group">
-                <div class="links-group-title reveal" data-i18n="links_title2">Criadores</div>
-
-                <div class="creator-grid">
-                    <article class="creator-card reveal">
-                        <div class="creator-top">
-                            <div class="creator-avatar rgb-text">T</div>
-                            <div class="creator-name">
-                                <strong>Tavix</strong>
-                                <span>Creator • RCT</span>
-                            </div>
-                        </div>
-
-                        <p class="creator-bio" data-i18n="creator_bio1">
-                            Criador da RCT, responsável por direção criativa, projetos digitais,
-                            conteúdo e desenvolvimento das ideias da equipe.
-                        </p>
-
-                        <div class="creator-links">
-                            <a class="creator-pill" href="https://x.com/realtavix" target="_blank" rel="noreferrer">
-                                X / Twitter @realtavix
-                            </a>
-                            <a class="creator-pill" href="https://discord.gg/T7GxNcq5n3" target="_blank"
-                                rel="noreferrer">
-                                Império Astral
-                            </a>
-                            <a class="creator-pill" href="https://realtavix.github.io/gustavotavixportfolio/" target="_blank" rel="noopener">
-                                Tavix Portfolio
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="creator-card reveal">
-                        <div class="creator-top">
-                            <div class="creator-avatar rgb-text">X</div>
-                            <div class="creator-name">
-                                <strong>lujs.dev</strong>
-                                <span>Creator • RCT</span>
-                            </div>
-                        </div>
-
-                        <p class="creator-bio" data-i18n="creator_bio2">
-                            Criador da RCT e colaborador dos projetos da equipe.
-                        </p>
-
-                        <div class="creator-links">
-                            <a class="creator-pill" href="https://luishenrique27.github.io/lujsdevportfolio/" target="_blank" rel="noopener">
-                                lujs.dev Portfolio
-                            </a>
-                        </div>
-                    </article>
+                <div><b>02</b>
+                    <h3>PERFORMANCE</h3>
+                    <p>Ajustes contínuos para manter a experiência rápida.</p>
                 </div>
-            </div>
-
-            <div class="links-group">
-                <div class="links-group-title reveal" data-i18n="links_title3">Comunidade</div>
-
-                <div class="social-links">
-                    <a class="social-btn reveal" href="https://discord.gg/T7GxNcq5n3" target="_blank" rel="noreferrer">
-                        <div class="social-main">
-                            <div class="social-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M8 8.5c2.7-1.1 5.3-1.1 8 0"></path>
-                                    <path d="M7 7c-2 2-2.5 5.4-2 8.7 1.5 1.2 3 1.9 4.5 2.3l1.1-1.5"></path>
-                                    <path d="M17 7c2 2 2.5 5.4 2 8.7-1.5 1.2-3 1.9-4.5 2.3l-1.1-1.5"></path>
-                                    <circle cx="9.5" cy="12.5" r=".8" fill="currentColor" stroke="none"></circle>
-                                    <circle cx="14.5" cy="12.5" r=".8" fill="currentColor" stroke="none"></circle>
-                                </svg>
-                            </div>
-                            <div class="social-text">
-                                <strong>Império Astral</strong>
-                                <span>discord.gg/T7GxNcq5n3</span>
-                            </div>
-                        </div>
-                        <span class="social-arrow">↗</span>
-                    </a>
+                <div><b>03</b>
+                    <h3>SUPORTE</h3>
+                    <p>Um canal direto para evoluir o projeto.</p>
+                </div>
+                <div><b>04</b>
+                    <h3>EVOLUÇÃO</h3>
+                    <p>Novas ideias e melhorias conforme sua empresa cresce.</p>
                 </div>
             </div>
         </section>
 
+        <section class="section process" id="processo">
+            <div class="section-kicker reveal">05 / PROCESSO</div>
+            <div class="split-heading reveal">
+                <h2>DA IDEIA<br><span>PARA A INTERNET.</span></h2>
+                <p>Um processo direto, visual e organizado para transformar sua ideia em uma presença digital pronta
+                    para trabalhar.</p>
+            </div>
+            <div class="timeline reveal">
+                <div class="timeline-line"></div>
+                <div class="step"><span>01</span>
+                    <h3>BRIEFING</h3>
+                    <p>Entendemos sua empresa, público e objetivo.</p>
+                </div>
+                <div class="step"><span>02</span>
+                    <h3>ESTRUTURA</h3>
+                    <p>Planejamos conteúdo, seções e experiência.</p>
+                </div>
+                <div class="step"><span>03</span>
+                    <h3>DESIGN</h3>
+                    <p>Transformamos a estratégia em identidade visual.</p>
+                </div>
+                <div class="step"><span>04</span>
+                    <h3>DESENVOLVIMENTO</h3>
+                    <p>Construímos a página responsiva e otimizada.</p>
+                </div>
+                <div class="step"><span>05</span>
+                    <h3>PUBLICAÇÃO</h3>
+                    <p>Colocamos o projeto online.</p>
+                </div>
+                <div class="step"><span>06</span>
+                    <h3>EVOLUÇÃO</h3>
+                    <p>Nos planos mensais, continuamos aprimorando.</p>
+                </div>
+            </div>
+        </section>
 
-        <section class="contact" id="contact">
+        <section class="section projects" id="projetos">
+            <div class="section-kicker reveal">06 / PROJETOS</div>
+            <div class="split-heading reveal">
+                <h2>ALGUNS DOS NOSSOS<br><span>TRABALHOS E EXPERIMENTOS.</span></h2>
+                <p>Projetos reais da equipe e experiências digitais independentes. A estrutura já está preparada para
+                    receber novos cases.</p>
+            </div>
+             <div class="scene-wrapper">
+                <!-- The scaler handles fitting the giant 1280x720 items onto the viewport -->
+                <div class="scaler" id="scaler">
+                    <div class="scene">
+                        <div class="carousel" id="carousel">
+                            <!-- Item 1 -->
+                            <div class="carousel-item active" data-index="0">
+                                <div class="browser-bar">
+                                    <div class="browser-dot" style="background: #ff5f56;"></div>
+                                    <div class="browser-dot" style="background: #ffbd2e;"></div>
+                                    <div class="browser-dot" style="background: #27c93f;"></div>
+                                    <div class="ml-4 text-xs font-mono text-white/40">dashboard.app</div>
+                                </div>
+                                <iframe src="./assets/examples/example1.html" loading="lazy" scrolling="no" width="100%" height="100%" frameborder="0"></iframe>
+                                <div class="item-overlay">
+                                    <h2 class="text-4xl font-bold mb-2">Data Analytics Platform</h2>
+                                    <p class="text-xl text-white/70 max-w-2xl">A comprehensive real-time dashboard visualizing complex data sets with seamless user experience.</p>
+                                </div>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="carousel-item" data-index="1">
+                                <div class="browser-bar">
+                                    <div class="browser-dot" style="background: #ff5f56;"></div>
+                                    <div class="browser-dot" style="background: #ffbd2e;"></div>
+                                    <div class="browser-dot" style="background: #27c93f;"></div>
+                                    <div class="ml-4 text-xs font-mono text-white/40">store.eco</div>
+                                </div>
+                                <iframe src="./assets/examples/example2.html" loading="lazy" scrolling="no" width="100%" height="100%" frameborder="0"></iframe>
+                                <div class="item-overlay">
+                                    <h2 class="text-4xl font-bold mb-2">Sustainable Marketplace</h2>
+                                    <p class="text-xl text-white/70 max-w-2xl">High-conversion e-commerce storefront utilizing modern web architectures and optimized imagery.</p>
+                                </div>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="carousel-item" data-index="2">
+                                <div class="browser-bar">
+                                    <div class="browser-dot" style="background: #ff5f56;"></div>
+                                    <div class="browser-dot" style="background: #ffbd2e;"></div>
+                                    <div class="browser-dot" style="background: #27c93f;"></div>
+                                    <div class="ml-4 text-xs font-mono text-white/40">creative.agency</div>
+                                </div>
+                                <iframe src="./assets/examples/example2.html" loading="lazy" scrolling="no" width="100%" height="100%" frameborder="0"></iframe>
+                                <div class="item-overlay">
+                                    <h2 class="text-4xl font-bold mb-2">Immersive Portfolio</h2>
+                                    <p class="text-xl text-white/70 max-w-2xl">Award-winning digital agency website featuring WebGL animations and fluid page transitions.</p>
+                                </div>
+                            </div>
+                            <!-- Item 4 -->
+                            <div class="carousel-item" data-index="3">
+                                <div class="browser-bar">
+                                    <div class="browser-dot" style="background: #ff5f56;"></div>
+                                    <div class="browser-dot" style="background: #ffbd2e;"></div>
+                                    <div class="browser-dot" style="background: #27c93f;"></div>
+                                    <div class="ml-4 text-xs font-mono text-white/40">ai.write</div>
+                                </div>
+                                <iframe src="./assets/examples/example2.html" loading="lazy" scrolling="no" width="100%" height="100%" frameborder="0"></iframe>
+                                <div class="item-overlay">
+                                    <h2 class="text-4xl font-bold mb-2">Generative AI Tool</h2>
+                                    <p class="text-xl text-white/70 max-w-2xl">SaaS application interface for next-generation large language models and prompt engineering.</p>
+                                </div>
+                            </div>
+                            <!-- Item 5 -->
+                            <div class="carousel-item" data-index="4">
+                                <div class="browser-bar">
+                                    <div class="browser-dot" style="background: #ff5f56;"></div>
+                                    <div class="browser-dot" style="background: #ffbd2e;"></div>
+                                    <div class="browser-dot" style="background: #27c93f;"></div>
+                                    <div class="ml-4 text-xs font-mono text-white/40">travel.blog</div>
+                                </div>
+                                <iframe src="./assets/examples/example1.html" loading="lazy" scrolling="no" width="100%" height="100%" frameborder="0"></iframe>
+                                <div class="item-overlay">
+                                    <h2 class="text-4xl font-bold mb-2">Nomad Journal</h2>
+                                    <p class="text-xl text-white/70 max-w-2xl">Media-rich travel blog with interactive mapping integrations and high-resolution photography.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls no-select">
+                <button id="prevBtn" class="nav-btn" aria-label="Previous">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button id="nextBtn" class="nav-btn" aria-label="Next">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            </div>
+        </section>
+
+        <section class="section team" id="equipe">
+            <div class="section-kicker reveal">07 / EQUIPE</div>
+            <div class="split-heading reveal">
+                <h2>PEQUENA EQUIPE.<br><span>GRANDES IDEIAS.</span></h2>
+                <p>Passe o mouse ou toque em um integrante para conhecer sua atuação, especialidades e portfólio.</p>
+            </div>
+            <div class="team-grid reveal" id="teamGrid"></div>
+        </section>
+
+        <section class="section benefits">
+            <div class="section-kicker reveal">08 / POR QUE ROXY?</div>
+            <div class="benefit-grid reveal">
+                <article><span>01</span>
+                    <h3>FEITO PARA SUA MARCA</h3>
+                    <p>Nada de simplesmente trocar textos de um template.</p>
+                </article>
+                <article><span>02</span>
+                    <h3>MOBILE FIRST</h3>
+                    <p>Experiência pensada também para smartphones.</p>
+                </article>
+                <article><span>03</span>
+                    <h3>PERFORMANCE</h3>
+                    <p>Código e estrutura pensados para carregamento rápido.</p>
+                </article>
+                <article><span>04</span>
+                    <h3>DESIGN + DESENVOLVIMENTO</h3>
+                    <p>Criação visual e tecnologia trabalhando juntas.</p>
+                </article>
+                <article><span>05</span>
+                    <h3>ACOMPANHAMENTO</h3>
+                    <p>Possibilidade de manter sua página atualizada todos os meses.</p>
+                </article>
+                <article><span>06</span>
+                    <h3>SEM COMPLICAÇÃO</h3>
+                    <p>Processo simples, comunicação direta e entrega organizada.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section demo">
+            <div class="section-kicker reveal">09 / DEMONSTRAÇÃO CONCEITUAL</div>
+            <div class="split-heading reveal">
+                <h2>ANTES / <span>DEPOIS.</span></h2>
+                <p>Uma demonstração conceitual para visualizar a diferença entre uma presença genérica e uma experiência
+                    com identidade.</p>
+            </div>
+            <div class="before-after reveal" id="beforeAfter">
+                <div class="ba-panel before"><span>ANTES</span>
+                    <div class="fake-browser generic"><i></i><i></i><i></i>
+                        <h4>Bem-vindo ao nosso site</h4>
+                        <p>Texto padrão e pouca hierarquia visual.</p><button>Saiba mais</button>
+                    </div>
+                </div>
+                <div class="ba-panel after"><span>DEPOIS / ROXY</span>
+                    <div class="fake-browser roxy-demo"><i></i><i></i><i></i><strong>DIGITAL EXPERIENCE</strong>
+                        <h4>UMA MARCA QUE<br>É DIFÍCIL IGNORAR.</h4><button>COMEÇAR ↗</button>
+                    </div>
+                </div>
+                <div class="ba-divider" id="baDivider"><span>↔</span></div>
+                <input type="range" min="15" max="85" value="50" id="baRange" aria-label="Comparar antes e depois" />
+            </div>
+        </section>
+
+        <section class="cta-band reveal">
             <div>
-                <p class="eyebrow reveal">LET'S BUILD SOMETHING</p>
+                <p>READY TO BUILD / RCT</p>
+                <h2>SUA PRÓXIMA PÁGINA<br>PODE COMEÇAR <span>AQUI.</span></h2>
+            </div>
+            <a class="btn btn-light" href="#contato">Começar meu projeto →</a>
+        </section>
 
-                <h2 class="contact-title rgb-text reveal" data-i18n="contact_title">
-                    Tem uma ideia?<br>
-                    Fale com a RCT.
-                </h2>
-
-                <div class="actions reveal">
-                    <a class="btn btn-light" href="mailto:seuemail@gmail.com" data-i18n="btn_email">Enviar e-mail</a>
-                    <a class="btn btn-dark" target="_blank" rel="noreferrer" href="https://instagram.com/roxycooperativeteam">
-                        <span style="display:inline-flex;align-items:center;gap:8px;">
-                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <rect x="3" y="3" width="18" height="18" rx="5"></rect>
-                                <circle cx="12" cy="12" r="4"></circle>
-                                <circle cx="17.5" cy="6.5" r="1"></circle>
-                            </svg>
-                            Instagram ↗
-                        </span>
-                    </a>
+        <section class="section faq" id="faq">
+            <div class="section-kicker reveal">10 / FAQ</div>
+            <div class="faq-layout reveal">
+                <h2>DÚVIDAS<br><span>FREQUENTES.</span></h2>
+                <div class="faq-list">
+                    <details>
+                        <summary>Quanto custa uma landing page?<span>+</span></summary>
+                        <p>Cada projeto possui necessidades diferentes. Depois de entendermos seu objetivo e a estrutura
+                            necessária, montamos uma proposta personalizada.</p>
+                    </details>
+                    <details>
+                        <summary>Quanto tempo demora para desenvolver?<span>+</span></summary>
+                        <p>O prazo depende da complexidade e da quantidade de conteúdo do projeto. O prazo é definido
+                            antes do início do desenvolvimento.</p>
+                    </details>
+                    <details>
+                        <summary>Vocês fazem apenas landing pages?<span>+</span></summary>
+                        <p>Não. Também desenvolvemos websites, portfólios, ferramentas, aplicações e projetos digitais
+                            personalizados.</p>
+                    </details>
+                    <details>
+                        <summary>Posso contratar apenas a landing page sem mensalidade?<span>+</span></summary>
+                        <p>Sim. É possível contratar um projeto único ou optar pelo acompanhamento mensal.</p>
+                    </details>
+                    <details>
+                        <summary>O que está incluso no plano mensal?<span>+</span></summary>
+                        <p>O plano pode incluir manutenção, alterações de conteúdo, ajustes de layout, correções,
+                            suporte e evolução contínua conforme o pacote contratado.</p>
+                    </details>
+                    <details>
+                        <summary>Vocês ajudam com domínio e hospedagem?<span>+</span></summary>
+                        <p>Podemos auxiliar na configuração e publicação da estrutura necessária para colocar o projeto
+                            online.</p>
+                    </details>
+                    <details>
+                        <summary>A página funciona no celular?<span>+</span></summary>
+                        <p>Sim. Os projetos são desenvolvidos para funcionar em computadores, tablets e smartphones.</p>
+                    </details>
                 </div>
+            </div>
+        </section>
 
-                <div class="discord-grid reveal">
-                    <a class="discord-card" target="_blank" rel="noreferrer" href="https://discord.gg/YgZexsUyWv">
-                        <small>Discord oficial</small>
-                        <strong>RCT Roxy Team</strong>
-                        <span data-i18n="contact_social1">Entre na comunidade oficial da RCT e acompanhe projetos,
-                            desenvolvimento e novidades.</span>
-                        <div class="discord-link">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M8 8.5c2.7-1.1 5.3-1.1 8 0"></path>
-                                <path d="M7 7c-2 2-2.5 5.4-2 8.7 1.5 1.2 3 1.9 4.5 2.3l1.1-1.5"></path>
-                                <path d="M17 7c2 2 2.5 5.4 2 8.7-1.5 1.2-3 1.9-4.5 2.3l-1.1-1.5"></path>
-                                <circle cx="9.5" cy="12.5" r=".8" fill="currentColor" stroke="none"></circle>
-                                <circle cx="14.5" cy="12.5" r=".8" fill="currentColor" stroke="none"></circle>
-                            </svg>
-                            Entrar no Discord
-                        </div>
-                    </a>
-
-                    <a class="discord-card" target="_blank" rel="noreferrer" href="https://discord.gg/T7GxNcq5n3">
-                        <small>Comunidade</small>
-                        <strong>Império Astral</strong>
-                        <span data-i18n="contact_social2">Comunidade do Império Astral de Tavix.</span>
-                        <div class="discord-link">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                <path d="M8 8.5c2.7-1.1 5.3-1.1 8 0"></path>
-                                <path d="M7 7c-2 2-2.5 5.4-2 8.7 1.5 1.2 3 1.9 4.5 2.3l1.1-1.5"></path>
-                                <path d="M17 7c2 2 2.5 5.4 2 8.7-1.5 1.2-3 1.9-4.5 2.3l-1.1-1.5"></path>
-                                <circle cx="9.5" cy="12.5" r=".8" fill="currentColor" stroke="none"></circle>
-                                <circle cx="14.5" cy="12.5" r=".8" fill="currentColor" stroke="none"></circle>
-                            </svg>
-                            Entrar no Discord
-                        </div>
-                    </a>
+        <section class="section contact" id="contato">
+            <div class="contact-shell reveal">
+                <div class="contact-intro">
+                    <p class="eyebrow">[ CONTACT / START PROJECT ]</p>
+                    <h2>VAMOS CRIAR<br><span>ALGO?</span></h2>
+                    <p>Conte um pouco sobre sua ideia. A Roxy entra em contato para entender o projeto e montar a
+                        proposta.</p>
+                    <div class="contact-meta"><span>ROXY CREATE TEAM</span><span
+                            id="cnpjDisplay"></span><span>BRASIL</span></div>
                 </div>
+                <form id="leadForm" class="lead-form">
+                    <div class="field-row">
+                        <label>Nome<input required name="name" type="text" placeholder="Seu nome" /></label>
+                        <label>Empresa<input name="company" type="text" placeholder="Nome da empresa" /></label>
+                    </div>
+                    <div class="field-row">
+                        <label>E-mail <input required name="email" type="email" placeholder="voce@empresa.com" /></label>
+                    </div>
+                    <label>O que você precisa?
+                        <select name="service">
+                            <option>Landing Page</option>
+                            <option>Landing Page + Plano Mensal</option>
+                            <option>Website</option>
+                            <option>Sistema</option>
+                            <option>Projeto personalizado</option>
+                            <option>Ainda não sei</option>
+                        </select>
+                    </label>
+                    <label>Conte um pouco sobre sua ideia
+                        <textarea required name="message" rows="5" placeholder="Objetivo, referências, prazo, o que você imagina para o projeto..."></textarea>
+                    </label>
+                    <button class="btn btn-primary full" type="submit">Enviar solicitação ↗</button>
+                    <p class="form-status" id="formStatus">Este formulário redireciona você para o WhatsApp.</p>
+                </form>
             </div>
         </section>
     </main>
 
     <footer>
-        <div>
-            <strong class="rgb-text">RCT ROXY TEAM</strong><br><br>
-            Games • Websites • Digital Projects<br><br>
-            59.600.810/0001-21
+        <div class="footer-main">
+            <div class="footer-brand"><img src="assets/roxy-full.png" alt="Roxy Create Team" />
+                <p>Design.<br>Development.<br>Digital Experiences.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Menu</h4>
+                <a href="#servicos">Serviços</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#planos">Planos</a>
+                <a href="#equipe">Equipe</a>
+                <a href="#contato">Contato</a>
+            </div>
+            <div class="footer-links">
+                <h4>Portfólios</h4>
+                <a id="tavixLink" target="_blank" rel="noopener">TaviX ↗</a>
+                <a id="lujsLink" target="_blank" rel="noopener">Lujs.dev ↗</a>
+            </div>
+            <div class="footer-links">
+                <h4>Institucional</h4>
+                <a href="termos-de-uso.html">Termos de uso</a>
+                <a href="politica-de-privacidade.html">Política de privacidade</a>
+            </div>
+            <div class="footer-company">
+                <h4>Empresa</h4>
+                <p>Roxy Create Team</p>
+                <p id="footerCnpj"></p>
+                <p>Brasil</p>
+            </div>
         </div>
-
-        <div>© <span id="year"></span> RCT</div>
+        <div class="footer-bottom"><span>© 2026 Roxy Create Team. Todos os direitos reservados.</span><span>PROJECT
+                STATUS / <b>ONLINE</b></span></div>
     </footer>
-    <script type="module" src="src/main.js"></script>
+
+    <a class="whatsapp-float" id="whatsappFloat" href="#contato"
+        aria-label="Falar com a Roxy Create Team"><span>↗</span><b>FALE CONOSCO</b></a>
+
+    <div class="contact-choice" id="contactChoice" aria-hidden="true">
+        <div class="contact-choice-backdrop" data-close-contact></div>
+        <div class="contact-choice-dialog" role="dialog" aria-modal="true" aria-labelledby="contactChoiceTitle">
+            <button class="contact-choice-close" type="button" data-close-contact aria-label="Fechar">×</button>
+            <p class="builder-kicker">ENVIAR PROPOSTA</p>
+            <h3 id="contactChoiceTitle">Por favor, verifique se suas informações estão corretas:</h3>
+            <p>A mensagem abaixo já está pronta com a configuração do seu plano.</p>
+            <textarea id="contactMessagePreview" readonly></textarea>
+            <div class="contact-choice-actions">
+                <button class="btn btn-primary" id="sendWhatsapp" type="button">WhatsApp ↗</button>
+            </div>
+            <small id="contactChoiceStatus">Você será redirecionado para o WhatsApp.</small>
+        </div>
+    </div>
+    <script>
+        const glow = document.querySelector('.cursor-glow');
+        if (window.matchMedia('(pointer:fine)').matches) {
+            window.addEventListener('pointermove', e => {
+                glow.style.left = e.clientX + 'px';
+                glow.style.top = e.clientY + 'px';
+            });
+        }
+    </script>
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
+
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            const open = !navLinks.classList.contains('open');
+            navLinks.classList.toggle('open', open);
+            menuToggle.classList.toggle('active', open);
+            menuToggle.setAttribute('aria-expanded', String(open));
+            document.body.classList.toggle('menu-open', open);
+        });
+        navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            menuToggle.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('menu-open');
+        }));
+    </script>
+    <script src="./src/config.js"></script>
+    <script src="./src/carousel.js"></script>
+    <script src="./src/main.js"></script>
 </body>
 
 </html>
