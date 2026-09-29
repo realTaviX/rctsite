@@ -1,0 +1,466 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>404 — Página não encontrada | ROXY CREATE TEAM</title>
+
+    <meta name="description" content="A página que você está procurando não foi encontrada. Volte para a ROXY CREATE TEAM e conheça nossos serviços digitais.">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+        :root {
+            --bg: #030303;
+            --surface: #101014;
+            --text: #f5f5f5;
+            --muted: #a1a1aa;
+            --blue: #086bff;
+            --border: #27272a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        /* GRID DE FUNDO */
+
+        body::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            top: 42px;
+            background: linear-gradient(90deg, transparent 0 68%, rgba(8, 107, 255, .03)), linear-gradient(rgba(255, 255, 255, .025) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, .025) 1px, transparent 1px);
+            background-size: auto, 80px 80px, 80px 80px;
+            mask-image: linear-gradient(to bottom, transparent, black 18%, black 80%, transparent)
+        }
+
+        /* HEADER */
+
+        header {
+            width: 100%;
+            height: 72px;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 24px;
+        }
+
+        .header-content {
+            width: 100%;
+            max-width: 1080px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            min-width: max-content;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .brand img {
+            width: 34px;
+            height: 34px;
+            object-fit: contain
+        }
+
+
+        .brand-name {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.4px;
+        }
+
+        .brand-name span {
+            color: var(--muted);
+        }
+
+        .header-status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--muted);
+            font-size: 11px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .status-dot {
+            width: 7px;
+            height: 7px;
+            background: var(--blue);
+            border-radius: 50%;
+            box-shadow: 0 0 12px var(--blue);
+        }
+
+        /* CONTEÚDO PRINCIPAL */
+
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 24px;
+        }
+
+        .error-container {
+            width: 100%;
+            max-width: 850px;
+            text-align: center;
+            position: relative;
+            animation: fadeUp 0.8s ease both;
+        }
+
+        .error-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 11px;
+            color: var(--muted);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        .error-label::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            background: var(--blue);
+            border-radius: 50%;
+            box-shadow: 0 0 12px var(--blue);
+        }
+
+        /* NÚMERO 404 */
+
+        .error-number {
+            font-size: clamp(130px, 25vw, 270px);
+            font-weight: 900;
+            line-height: 0.85;
+            letter-spacing: -0.09em;
+            color: var(--text);
+            position: relative;
+            display: inline-block;
+            margin-bottom: 36px;
+            user-select: none;
+        }
+
+        .error-number span {
+            color: var(--blue);
+            text-shadow: 0 0 70px rgba(8, 102, 245, 0.25);
+        }
+
+        .error-number::after {
+            content: "404";
+            position: absolute;
+            inset: 0;
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(255,255,255,0.08);
+            transform: translate(8px, 8px);
+            z-index: -1;
+        }
+
+        /* TEXTO */
+
+        .error-title {
+            font-size: clamp(26px, 5vw, 42px);
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            margin-bottom: 16px;
+        }
+
+        .error-description {
+            max-width: 480px;
+            margin: 0 auto;
+            color: var(--muted);
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        /* BOTÕES */
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 36px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            min-height: 48px;
+            padding: 0 24px;
+            font-family: inherit;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            text-transform: uppercase;
+            border: 1px solid var(--border);
+            transition: 0.25s ease;
+            cursor: pointer;
+        }
+
+        .button-primary {
+            background: var(--blue);
+            border-color: var(--blue);
+            color: white;
+        }
+
+        .button-primary:hover {
+            background: #0052d4;
+            box-shadow: 0 0 30px rgba(8, 102, 245, 0.25);
+            transform: translateY(-2px);
+        }
+
+        .button-secondary {
+            background: transparent;
+            color: var(--text);
+        }
+
+        .button-secondary:hover {
+            background: rgba(255,255,255,0.05);
+            border-color: #52525b;
+            transform: translateY(-2px);
+        }
+
+        .button svg {
+            width: 15px;
+            height: 15px;
+        }
+
+        /* DETALHE TÉCNICO */
+
+        .error-code {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 52px;
+            padding: 10px 14px;
+            border: 1px solid var(--border);
+            background: rgba(16,16,20,0.8);
+            color: #71717a;
+            font-family: monospace;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+        }
+
+        .error-code span {
+            color: var(--blue);
+        }
+
+        /* FOOTER */
+
+        footer {
+            width: 100%;
+            min-height: 64px;
+            padding: 20px 24px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            align-items: center;
+            background-color: var(--bg);
+            justify-content: center;
+        }
+
+        .footer-content {
+            width: 100%;
+            max-width: 1080px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .footer-copy {
+            font-size: 11px;
+            color: #71717a;
+        }
+
+        .footer-link {
+            font-size: 11px;
+            color: var(--muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-link:hover {
+            color: var(--blue);
+        }
+
+        /* ANIMAÇÕES */
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media (max-width: 600px) {
+            header {
+                height: 64px;
+            }
+
+            .header-status {
+                font-size: 9px;
+                letter-spacing: 0.5px;
+            }
+
+            main {
+                padding: 60px 20px;
+            }
+
+            .error-number {
+                margin-bottom: 28px;
+            }
+
+            .error-title {
+                letter-spacing: -0.8px;
+            }
+
+            .error-description {
+                font-size: 14px;
+            }
+
+            .actions {
+                flex-direction: column;
+                width: 100%;
+                max-width: 320px;
+                margin: 30px auto 0;
+            }
+
+            .button {
+                width: 100%;
+            }
+
+            .error-code {
+                margin-top: 38px;
+            }
+
+            .footer-content {
+                justify-content: center;
+                text-align: center;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+
+            <a href="/" class="brand">
+                <img src="assets/roxy-r.png" alt="Roxy Create Team" />
+
+                <div class="brand-name">
+                    ROXY <span>CREATE TEAM</span>
+                </div>
+            </a>
+
+            <div class="header-status">
+                <a href="/" class="brand">Voltar para o início</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="error-container">
+
+            <div class="error-label">
+                ROXY CREATE TEAM / ERROR
+            </div>
+
+            <div class="error-number">
+                4<span>0</span>4
+            </div>
+
+            <h1 class="error-title">
+                Página não encontrada.
+            </h1>
+
+            <p class="error-description">
+                Parece que você se perdeu no caminho.
+                A página que está procurando não existe,
+                foi movida ou não está mais disponível.
+            </p>
+
+            <div class="actions">
+
+                <a href="/" class="button button-primary">
+                    Voltar ao início
+
+                    <svg viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 17 17 7"></path>
+                        <path d="M7 7h10v10"></path>
+                    </svg>
+                </a>
+
+            </div>
+
+            <div class="error-code">
+                <span>●</span>
+                ERROR_CODE: 404_NOT_FOUND
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+
+            <p class="footer-copy">
+                © 2026 Roxy Create Team. Todos os direitos reservados.
+                CPNJ: 59.600.810/0001-21
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>

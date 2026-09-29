@@ -1,4 +1,19 @@
 const carousel = document.getElementById('carousel');
+
+carousel.innerHTML = cfg.projects.map((p) => `<div class="carousel-item" data-index="0">
+            <div class="browser-bar">
+                <div class="browser-dot" style="background: #ff5f56;"></div>
+                <div class="browser-dot" style="background: #ffbd2e;"></div>
+                <div class="browser-dot" style="background: #27c93f;"></div>
+                <div class="ml-4 text-xs font-mono text-white/40">${p.category}</div>
+            </div>
+            <img src="${p.image}" alt="Project 1" class="item-image">
+            <div class="item-overlay">
+                <h2 class="text-4xl font-bold mb-2">${p.name}</h2>
+                <p class="text-xl text-white/70 max-w-2xl">${p.description}</p>
+            </div>
+        </div>`);
+
 const items = document.querySelectorAll('.carousel-item');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
@@ -21,6 +36,7 @@ let activeIndex = 0;
 
 function initialize3D() {
     // Position each item in a circle
+    items[0].classList.add("active");
     items.forEach((item, index) => {
         const itemAngle = index * theta;
         // Place items outward radially
@@ -51,11 +67,8 @@ function updateActiveItem() {
 
     // Update classes
     items.forEach((item, index) => {
-        const iframe = item.querySelector("iframe");
         if (index === activeIndex) {
             item.classList.add('active');
-            iframe.style.pointerEvents = 'auto';
-            iframe.style.userSelect = 'auto';  
         } else {
             item.classList.remove('active');
         }

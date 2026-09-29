@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#030303" />
+    <meta name="description"
+        content="Landing pages, websites e experiências digitais desenvolvidas pela Roxy Create Team." />
+    <meta property="og:title" content="Roxy Create Team | Landing Pages & Desenvolvimento Web" />
+    <meta property="og:description"
+        content="Landing pages, websites e experiências digitais desenvolvidas pela Roxy Create Team." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/icon-r.png" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Portfólio — ROXY CREATE TEA</title>
+</head>
+
+<body>
+    <div class="cursor-glow"></div>
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="navbar" id="navbar">
+        <a class="brand" href="#inicio" aria-label="Roxy Create Team - Início">
+            <img src="assets/roxy-r.png" alt="Roxy Create Team" />
+            <span>ROXY <b>CREATE TEAM</b></span>
+        </a>
+        <nav class="nav-links" aria-label="Navegação principal">
+            <a href="/">Voltar para o início</a>
+        </nav>
+        <a class="btn btn-primary nav-cta" href="#contato">Solicitar proposta</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu"
+            aria-expanded="false"><span></span><span></span></button>
+    </header>
+
+    <main id="conteudo">
+        <section class="hero-bg hero-projects wrap" aria-labelledby="hero-title">
+            <p class="eyebrow-projects"><span class="blue-square"></span>02 / PROJETOS SELECIONADOS</p>
+            <h1 id="hero-title">IDEIAS QUE GANHAM<br>FORMA. PROJETOS QUE<br>CRIAM <span>PRESENÇA.</span></h1>
+            <div class="hero-bottom">
+                <p>Cada projeto é uma oportunidade de transformar ideias em experiências digitais únicas, combinando
+                    estratégia, design e tecnologia.</p>
+                <a class="btn scroll-cue" href="#portfolio">
+                    <span>EXPLORE OS PROJETOS</span>
+                    <i class="ph ph-arrow-down"></i>
+                </a>
+            </div>
+            <div class="hero-foot"><span>DESIGN + CÓDIGO + PROPÓSITO</span><span>ROXY / SELECTED WORK</span></div>
+        </section>
+        <section class="portfolio wrap" id="portfolio" aria-labelledby="portfolio-title">
+            <div class="section-top">
+                <h2 id="portfolio-title">TRABALHOS EM DESTAQUE<span class="count"> / 06</span></h2><span
+                    class="eyebrow-projects">EXPLORAÇÕES DIGITAIS</span>
+            </div>
+            <div class="project-grid" id="project-grid"></div>
+            <noscript>
+                <p>Ative o JavaScript para explorar os seis projetos. Para conhecer nossos serviços, <a
+                        href="https://www.roxyteam.xyz/#servicos">acesse o site principal</a>.</p>
+            </noscript>
+            <p class="gallery-note">Uma seleção de conceitos visuais. Cada projeto, uma possibilidade.</p>
+        </section>
+        <section class="process wrap" id="processo" aria-labelledby="process-title">
+            <p class="eyebrow-projects">NOSSO PROCESSO</p>
+            <h2 id="process-title">DO CONCEITO<br>À EXPERIÊNCIA.</h2>
+            <div class="steps">
+                <article><span class="step-number">01</span>
+                    <h3>Descoberta</h3>
+                    <p>Entendimento das necessidades, objetivos e identidade do projeto.</p>
+                </article>
+                <article><span class="step-number">02</span>
+                    <h3>Estratégia</h3>
+                    <p>Planejamento da estrutura, definição de funcionalidades e organização das informações.</p>
+                </article>
+                <article><span class="step-number">03</span>
+                    <h3>Desenvolvimento</h3>
+                    <p>Transformação do conceito em uma experiência digital funcional, responsiva e visualmente
+                        consistente.</p>
+                </article>
+                <article><span class="step-number">04</span>
+                    <h3>Entrega</h3>
+                    <p>Finalização, testes e disponibilização do projeto.</p>
+                </article>
+            </div>
+        </section>
+        <section class="contact" id="contato" aria-labelledby="contact-title">
+            <div class="wrap contact-inner">
+                <p class="eyebrow-projects"><span class="blue-square"></span>03 / VAMOS CRIAR ALGO?</p>
+                <h2 id="contact-title">SEU PRÓXIMO PROJETO<br>PODE <span>COMEÇAR AQUI.</span></h2>
+                <div class="contact-bottom">
+                    <p>Tem uma ideia ou precisa de uma presença digital mais profissional? Vamos conversar sobre como
+                        transformar seus objetivos em um projeto real.</p><a class="btn btn-primary" data-contact
+                        href="https://wa.me/5545998146252">Solicitar orçamento <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-brand"><img src="assets/roxy-full.png" alt="Roxy Create Team" />
+                <p>Design.<br>Development.<br>Digital Experiences.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Menu</h4>
+                <a href="#servicos">Serviços</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#planos">Planos</a>
+                <a href="#equipe">Equipe</a>
+                <a href="#contato">Contato</a>
+            </div>
+            <div class="footer-links">
+                <h4>Portfólios</h4>
+                <a id="tavixLink" target="_blank" rel="noopener">TaviX ↗</a>
+                <a id="lujsLink" target="_blank" rel="noopener">Lujs.dev ↗</a>
+            </div>
+            <div class="footer-links">
+                <h4>Institucional</h4>
+                <a href="/termos-de-uso">Termos de uso</a>
+                <a href="/politica-de-privacidade">Política de privacidade</a>
+            </div>
+            <div class="footer-company">
+                <h4>Empresa</h4>
+                <p>Roxy Create Team</p>
+                <p>CNPJ 59.600.810/0001-21</p>
+                <p>Brasil</p>
+            </div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 Roxy Create Team. Todos os direitos reservados.</span><span>PROJECT
+                STATUS / <b>ONLINE</b></span></div>
+    </footer>
+
+    <dialog id="project-dialog" aria-labelledby="dialog-title"><button class="btn-dialog-close"
+            aria-label="Fechar projeto">✕</button>
+        <div id="dialog-content"></div>
+    </dialog>
+
+    <script src="src/config.js"></script>
+
+    <script>
+        const glow = document.querySelector('.cursor-glow');
+        if (window.matchMedia('(pointer:fine)').matches) {
+            window.addEventListener('pointermove', e => {
+                glow.style.left = e.clientX + 'px';
+                glow.style.top = e.clientY + 'px';
+            });
+        }
+    </script>
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 20));
+
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            const open = !navLinks.classList.contains('open');
+            navLinks.classList.toggle('open', open);
+            menuToggle.classList.toggle('active', open);
+            menuToggle.setAttribute('aria-expanded', String(open));
+            document.body.classList.toggle('menu-open', open);
+        });
+        navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            menuToggle.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            document.body.classList.remove('menu-open');
+        }));
+    </script>
+    <script>
+        const cfg = window.ROXY_CONFIG;
+        const grid = document.querySelector('#project-grid');
+
+        cfg.projects.forEach((project, index) => {
+            const card = document.createElement('article'); card.className = 'project';
+            card.innerHTML = `<div class="project-image"><span class="project-index">0${index + 1} / CONCEITO</span><img src="${project.image}" alt="Mockup conceitual do projeto ${project.name}" width="800" height="512" ${index > 1 ? 'loading="lazy"' : 'fetchpriority="high"'}></div><div class="project-info"><div class="eyebrow-projects">${project.category}</div><h3>${project.name}</h3><p>${project.description}</p><div class="project-bottom"><div class="tags">${project.tags.map(tag => `<span>${tag}</span>`).join('')}</div><button class="project-open" aria-label="Visualizar projeto ${project.name}" data-project="${index}">Visualizar projeto <span aria-hidden="true">↗</span></button></div></div>`;
+            grid.append(card);
+        });
+
+        const contactURL = `https://wa.me/${cfg.brand.whatsapp}?text=${encodeURIComponent(cfg.brand.whatsappMessage)}`;
+
+        document.querySelectorAll('[data-contact]').forEach(link => {
+            link.href = contactURL;
+            link.target = '_blank';
+            link.rel = 'noopener noreferrer';
+        });
+
+        const dialog = document.querySelector('#project-dialog');
+
+        grid.addEventListener('click', event => {
+            const button = event.target.closest('[data-project]');
+            if (!button) return;
+            const p = cfg.projects[Number(button.dataset.project)];
+            document.querySelector('#dialog-content').innerHTML = `<img class="dialog-image" src="${p.image}" alt="Apresentação conceitual de ${p.name}"><div class="dialog-copy"><div class="eyebrow-projects">${p.category}</div><h2 id="dialog-title">${p.name}</h2><p>${p.detail}</p><p>Mockup demonstrativo. A composição apresentada é um estudo visual, não uma captura do projeto publicado.</p><div class="tags">${p.tags.map(t => `<span>${t}</span>`).join('')}</div>${p.url ? `<a class="btn btn-primary" href="${p.url}" target="_blank" rel="noopener noreferrer">Conhecer portfólio original ↗</a>` : `<a class="btn btn-primary " href="${contactURL}" target="_blank" rel="noopener noreferrer">Quero um projeto assim ↗</a>`}</div>`; dialog.showModal(); document.body.classList.add('modal-open'); });
+        document.querySelector('.btn-dialog-close').addEventListener('click', () => dialog.close());
+
+        dialog.addEventListener('click', event => {
+            if (event.target === dialog) {
+                const r = dialog.getBoundingClientRect();
+                if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); 
+            }
+        });
+
+        dialog.addEventListener('close', () => document.body.classList.remove('modal-open'));
+        if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal');
+                    observer.unobserve(entry.target); }
+                }), { threshold: .06 });
+                document.querySelectorAll('.project,.steps article').forEach(el => observer.observe(el));
+        }      
+    </script>
+</body>
+
+</html>

@@ -23,22 +23,12 @@ window.ROXY_CONFIG = {
         extraRevisionMonthly: 29
     },
     projects: [
-        {
-            name: 'TaviX',
-            mark: 'Tavi<em>X</em>',
-            category: 'Portfolio / Digital / Web',
-            description: 'Direção criativa, interfaces e projetos digitais.',
-            year: '2026',
-            link: 'https://realtavix.github.io/gustavotavixportfolio/#projetos'
-        },
-        {
-            name: 'Lujs.dev',
-            mark: 'Lujs<em>.</em>dev',
-            category: 'Full Stack Development',
-            description: 'Aplicações, sistemas e experiências digitais.',
-            year: '2026',
-            link: 'https://luishenrique27.github.io/lujsdevportfolio/'
-        }
+        {name:'Portfólio 1',category:'PORTFÓLIO / DIGITAL / WEB',description:'Direção criativa, interfaces e projetos digitais.',tags:['UI / UX','Web design'],image:'assets/tavix.svg',detail:'Uma exploração de portfólio com tipografia expressiva, composição editorial e navegação focada nos trabalhos. Direção visual pensada para valorizar a identidade de um criador.',url:'https://realtavix.github.io/gustavotavixportfolio/'},
+        {name:'Portfólio 2',category:'FULL STACK DEVELOPMENT',description:'Aplicações, sistemas e experiências digitais.',tags:['Interfaces','Desenvolvimento'],image:'assets/luis.svg',detail:'Um conceito de apresentação para desenvolvimento full stack. Hierarquia clara, linguagem técnica e uma seleção organizada de projetos conectam especialidades e experiências.',url:'https://luishenrique27.github.io/lujsdevportfolio/'},
+        {name:'Landing Page',category:'WEB DESIGN / CONVERSÃO',description:'Páginas estratégicas desenvolvidas para apresentar negócios, fortalecer marcas e transformar visitantes em clientes.',tags:['HTML5','CSS3','JavaScript'],image:'assets/landing.svg',detail:'Conceito para uma marca de arquitetura: mensagem direta, serviços organizados e chamadas de contato nos momentos certos da navegação.',url:''},
+        {name:'Cardápio Digital',category:'DIGITAL SOLUTIONS',description:'Experiências digitais para restaurantes e estabelecimentos comerciais, com navegação simples e apresentação organizada dos produtos.',tags:['UI / UX','Mobile first'],image:'assets/menu.svg',detail:'Conceito de cardápio com categorias, preços legíveis e organização simples. A experiência prioriza a consulta rápida dos produtos pelo celular.',url:''},
+        {name:'Dashboard',category:'UI DESIGN / DEVELOPMENT',description:'Interfaces administrativas que transformam dados em informações acessíveis e facilitam o gerenciamento de operações.',tags:['UI design','Data visualization'],image:'assets/dashboard.svg',detail:'Conceito de painel administrativo com indicadores, tendências e atividades recentes. A hierarquia visual facilita comparar dados e identificar prioridades.',url:''},
+        {name:'E-commerce',category:'WEB DEVELOPMENT / COMMERCE',description:'Experiências de compra digitais com foco em usabilidade, identidade visual e organização de produtos.',tags:['UI / UX','E-commerce'],image:'assets/commerce.svg',detail:'Conceito de loja de tipografia e recursos digitais com catálogo organizado, preços claros e uma identidade editorial marcante.',url:''}
     ],
     team: [
         {

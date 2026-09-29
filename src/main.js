@@ -97,7 +97,6 @@ document.addEventListener('click', (event) => {
 });
 
 document.getElementById('cnpjDisplay').textContent = `CNPJ ${cfg.brand.cnpj}`;
-document.getElementById('footerCnpj').textContent = `CNPJ ${cfg.brand.cnpj}`;
 document.getElementById('tavixLink').href = cfg.social.tavix;
 document.getElementById('lujsLink').href = cfg.social.lujs;
 
@@ -200,13 +199,11 @@ function openContactChoice() {
     contactChoiceStatus.textContent = 'Você será redirecionado para o WhatsApp.';
     contactChoiceStatus.classList.remove('success');
     contactChoice.classList.add('open');
-    contactChoice.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
 }
 
 function closeContactChoice() {
     contactChoice.classList.remove('open');
-    contactChoice.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
 }
 
